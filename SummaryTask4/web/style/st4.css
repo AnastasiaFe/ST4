@@ -1,0 +1,25 @@
+fieldset{border: none; margin-bottom: 0;height: 40px;font-family: "Comic Sans MS";font-size: 18px;}
+fieldset input{font-family: "Comic Sans MS";}
+#footerTr{position:absolute;height: 5%;width:100%;background-color: #1bb253;margin-left: 0;left: 0;bottom: 0;}
+tr td p{margin-left: 50%;}
+input{}
+body{  font-family: "Comic Sans MS";}
+
+#users_list{position: relative;margin-top: 6%;margin-left: 5%;}
+#addClient{width: 100px;height: 60px;position: fixed;bottom:5%;right: 0;}
+#services{position: relative;top:100px;}
+#tariffs{ position: relative;top:80px;border-collapse: collapse;margin-left: 10%;margin-right: 8%;}
+#descColumn{width: 35%;}
+#tariffName{width: 10%;}
+#tariffHead{border-bottom: 1px solid orange}
+#tariffs tbody td{margin-right: 4%;}
+#tariffs tbody tr:hover{background-color: rgba(3, 3, 6, 0.08);cursor: pointer}
+
+#editTariffForm{position: relative;left: 30%;margin-top: 10%;}
+#modal{visibility: hidden;width:30%;height: 20%;}
+#confirmDelete{position: relative;margin-top: 20%;}
+img{width: 30px;height: 30px;}
+#addClientForm{position: relative;margin-top: 15%;margin-left: 15%;}
+#disableSelect{pointer-events: none;
+    cursor: default;color: gray;}
+#blockP{position: relative;margin-top: 5%;}

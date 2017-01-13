@@ -1,0 +1,12 @@
+<%@ include file="/WEB-INF/jspf/directive/page.jspf" %>
+<%@ include file="/WEB-INF/jspf/directive/taglib.jspf" %>
+<tr id="tariffHead">
+    <td>Name</td>
+    <td>Description</td>
+    <td>Price</td>
+    <td><a id="alphSortAsc" href="controller?command=sort&sort=alphAsc&serviceId=${serviceId}"><img src="/al1.png"></a>
+        <a id="alphSortDesc" href="controller?command=sort&sort=alphDesc&serviceId=${serviceId}"><img src="/al2.png"></a>
+        <a id="priceSortAsc" href="controller?command=sort&sort=priceAsc&serviceId=${serviceId}"><img src="/price1.png"></a>
+        <a id="priceSortDesc" href="controller?command=sort&sort=priceDesc&serviceId=${serviceId}"><img src="/price1.png"></a>
+    </td>
+</tr>

@@ -1,0 +1,25 @@
+#menu{position: absolute;width: 100%;background-color: #1bb253;height: 8%;top: 0;left: 0;margin-bottom: 10%;}
+#menu ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+#menu .right{position: relative;float: right;margin-right: 2%;}
+#menu li {
+    font-size: 25px;
+    font-family: "Comic Sans MS";
+    list-style-type: none;
+    display: inline;
+    margin: 5px 15px 5px 15px;
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu li a.active, #menu a:hover {
+    text-decoration: underline;
+    color:#ff9322
+}

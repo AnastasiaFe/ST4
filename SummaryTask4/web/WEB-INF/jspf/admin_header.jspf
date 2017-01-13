@@ -1,0 +1,31 @@
+<%@ taglib prefix="u" uri="http://knure.kharkov.ua/ST4/user" %>
+<%@ include file="/WEB-INF/jspf/directive/page.jspf" %>
+<%@ include file="/WEB-INF/jspf/directive/taglib.jspf" %>
+<u:permit role="admin"/>
+<tr>
+    <td id="header">
+        <c:set var="user" scope="session" value="${sessionScope.user}"/>
+        <c:if test="${not empty user}">
+        <c:set var="userRole" scope="session" value="${sessionScope.userRole}"/>
+        <div id="menu">
+            <li> <a class="right" href="controller?command=logout"><fmt:message key="header_logout"/></a></li>
+
+                    <li class="right">${user.login}(<fmt:message key="header_admin"/>)</li>
+                    <li class="active"> <a href="controller?command=viewPage&page=users"><fmt:message key="header_users"/></a> &nbsp;</li>
+                    <li> <a href="controller?command=viewPage&page=services"><fmt:message key="header_services"/></a></li>
+                <%--===========================================================================
+                This way we define the settings and logout anchor.
+                ===========================================================================--%>
+            <li>  <a href="controller?command=viewPage&page=settings"><fmt:message key="header_settings"/></a> &nbsp;</li>
+
+
+
+            </c:if>
+
+            <c:if test="${empty user and title ne 'Login'}">
+                <a class="right" href="login.jsp">Login</a>
+            </c:if>
+        </div>
+
+    </td>
+</tr>

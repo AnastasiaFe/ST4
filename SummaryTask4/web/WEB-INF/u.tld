@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+    <tlib-version>2.0</tlib-version>
+    <short-name>u</short-name>
+    <uri>http://knure.kharkov.ua/ST4/user</uri>
+
+    <!-- User defined tag -->
+    <tag>
+        <name>permit</name>
+        <tag-class>ua.nure.fedorenko.SummaryTask4.web.tag.PermitTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>role</name>
+        </attribute>
+    </tag>
+
+    <!-- User defined tag as tag file (so-called "new tag") -->
+    <tag-file>
+        <name>users</name>
+        <path>/WEB-INF/tags/user-list.tag</path>
+    </tag-file>
+<tag-file>
+    <name>client_tariffs</name>
+    <path>/WEB-INF/tags/clientTariff_list.tag</path>
+</tag-file>
+    <tag-file>
+        <name>tariffs</name>
+        <path>/WEB-INF/tags/tariff-list.tag</path>
+    </tag-file>
+    <!-- User defined function -->
+    <function>
+        <name>fullName</name>
+        <function-class>ua.nure.fedorenko.SummaryTask4.web.tag.UserNameFunction</function-class>
+        <function-signature>java.lang.String fullName(ua.nure.fedorenko.SummaryTask4.db.entity.User))</function-signature>
+    </function>
+
+</taglib>

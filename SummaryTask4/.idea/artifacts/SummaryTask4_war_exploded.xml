@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SummaryTask4:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SummaryTask4_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SummaryTask4/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SummaryTask4" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="itextpdf-5.3.4" />
+          <element id="library" level="project" name="junit:junit:3.8" />
+          <element id="library" level="project" name="javax.mail:mail:1.4" />
+          <element id="library" level="project" name="javax_servlet_jsp_jstl-1_2_1" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.40-bin" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
